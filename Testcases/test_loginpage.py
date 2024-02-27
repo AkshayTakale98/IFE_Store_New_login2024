@@ -32,8 +32,8 @@ class Test_login_page001:
 
 # @pytest.mark.usefixtures("setup_ife_store")
 # class Test_login_page_multiple_ids:
-#
-#
+
+
 #     @pytest.mark.parametrize("login_id, Password",[("akshay1","akshay123"),("akshay2","akshay123"),("akshay3","akshay123")])
 #     def test_loginid_002(self, login_id, Password):
 #         lg = LoginPage(self.driver)
