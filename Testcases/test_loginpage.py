@@ -30,15 +30,15 @@ class Test_login_page001:
         lg.cilck_on_login_button()
         lg.take_a_screen_shot(conditions)
 
-# @pytest.mark.usefixtures("setup_ife_store")
-# class Test_login_page_multiple_ids:
+@pytest.mark.usefixtures("setup_ife_store")
+class Test_login_page_multiple_ids:
 
 
-#     @pytest.mark.parametrize("login_id, Password",[("akshay1","akshay123"),("akshay2","akshay123"),("akshay3","akshay123")])
-#     def test_loginid_002(self, login_id, Password):
-#         lg = LoginPage(self.driver)
-#         # super.self.driver = self.driver
-#         lg.send_user_id(login_id)
-#         # self.driver.get_screenshot_as_file(Password)
-#         lg.send_login_password("Akii@2227")
-#         lg.cilck_on_login_button()
+    @pytest.mark.parametrize("login_id, Password",[("akshay1","akshay123"),("akshay2","akshay123"),("akshay3","akshay123")])
+    def test_loginid_002(self, login_id, Password):
+        lg = LoginPage(self.driver)
+        # super.self.driver = self.driver
+        lg.send_user_id(login_id)
+        # self.driver.get_screenshot_as_file(Password)
+        lg.send_login_password("Akii@2227")
+        lg.cilck_on_login_button()
